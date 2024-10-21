@@ -1,13 +1,19 @@
+class Student:
+    ...
+
+
 def main():
-    name = get_name()
-    house = get_house()
-    print(f"{name} from {house}")
+    student = get_student_info()
+    print(f"{student.name} from {student.house}")
 
-def get_name():
-    return input("Name: ")
+def get_student_info():
+    student = Student()
+    student.name = input("Name: ")
+    student.house = input("House: ")
+    return student # this method is just by returning using a tuple but by another way
 
-def get_house():
-    return input("House: ")
+
+
 
 if __name__ == "__main__":
     main()
