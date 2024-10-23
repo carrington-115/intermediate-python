@@ -20,6 +20,16 @@ class Cart_product:
             "Delivery date": self.delivery_date
         }
     
+    @property
+    def product_name(self):
+        return self._product_name
+    
+    @product_name.setter
+    def name(self, product_name):
+        if not product_name:
+            raise ValueError('Invalid name')
+        self.product_name = product_name
+    
 class Cart:
     def __init__(self, cart_data):
         self.cart_data = cart_data
