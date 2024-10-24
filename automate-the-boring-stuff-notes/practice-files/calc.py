@@ -1,9 +1,8 @@
-import pytest
-
+# calculator function
 class Calculator:
-    def __init__(self, operation, operands=[]):
-        self.operands = operands
-        self.operations = operation
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
     def addition(self):
         return self.x + self.y
@@ -13,7 +12,7 @@ class Calculator:
     
     def divide(self):
         if self.y == 0:
-            raise ValueError("The value of y cannot be zero")
+            raise ZeroDivisionError("The value of y cannot be zero")
         return self.x / self.y
     
     def mod(self):
