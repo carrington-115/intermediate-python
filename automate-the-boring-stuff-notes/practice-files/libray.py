@@ -16,12 +16,17 @@ a library have the following tools
         * table of content - sections: each section has a topic (title, section number, page number)
         * content: full string
         * appendix: full string
-        * author: person (class)
+        * author: person (class) - person, matriculation, best_seller_books, 
         books methods
         * open and go to a page
         * can display data on a page
         * return shelf number
-        * 
+    
+    - *student*
+        * A student has information the person class have including:
+        * course, department, student_id,
+        * time of visits and dates collection: preferrably, we can use a tuple set this type of data list
+        * lib_data - visits and books
 
     
 
@@ -99,7 +104,7 @@ class Cover:
         }
 
 class Book:
-    def __init__(self, name, pages, table_of_content, content, shelf_number, cover, appendix, author):
+    def __init__(self, name, pages, table_of_content, content, shelf_number, cover, appendix, author, number_of_copies, publisher, publication_id, editor):
         self.name = name
         self.pages = pages
         self.table_of_content = table_of_content
@@ -108,3 +113,53 @@ class Book:
         self.cover = cover
         self.appendix = appendix
         self.author = author
+        self.number_of_copies = number_of_copies
+        self.publisher = publisher
+        self.publication_id = publication_id,
+        self.editor = editor
+
+    def __str__(self):
+        return {
+            'name': self.name,
+            'pages': self.pages,
+            'table of content': self.table_of_content,
+            'content': self.content,
+            'self_number': self.shelf_number,
+            'cover': self.cover,
+            'appendix': self.appendix,
+            'author': self.author,
+            'number of copies': self.number_of_copies
+
+        }
+
+
+class Author(Person):
+    def __init__(self, name, place_of_birth, home_details, date_of_birth, gender, age, marital_status, email, phone_number, matriculation, profession, ):
+        super().__init__(name, place_of_birth, home_details, date_of_birth, gender, age, marital_status, email, phone_number)
+        self.matriculation = matriculation
+        self.profession = profession
+
+    def __str__(self):
+        return {
+            'person': super().__str__(),
+            'matriculation number': self.matriculation,
+            'profession': self.profession
+        }
+    
+class Student(Person):
+    def __init__(self, name, place_of_birth, home_details, date_of_birth, gender, age, marital_status, email, phone_number, department, student_id, course, lib_data):
+        super().__init__(name, place_of_birth, home_details, date_of_birth, gender, age, marital_status, email, phone_number)
+        self.department = department
+        self.student_id = student_id
+        self.course = course
+        self.lib_data = lib_data # lib hours and books
+
+    def __str__(self):
+        return {
+            'student infor': super().__str__(),
+            'department': self.department,
+            'student id': self.student_id,
+            'course': self.course
+        }
+    
+
