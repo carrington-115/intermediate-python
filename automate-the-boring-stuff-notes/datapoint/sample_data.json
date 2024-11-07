@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "age": 30,
+      "department": "Engineering",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "age": 25,
+      "department": "Marketing",
+      "email": "bob.smith@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "age": 35,
+      "department": "Human Resources",
+      "email": "charlie.brown@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Daisy Miller",
+      "age": 28,
+      "department": "Sales",
+      "email": "daisy.miller@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Evan Davis",
+      "age": 40,
+      "department": "Finance",
+      "email": "evan.davis@example.com"
+    }
+  ]
+}

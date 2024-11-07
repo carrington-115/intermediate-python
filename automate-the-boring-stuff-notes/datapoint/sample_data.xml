@@ -1,0 +1,37 @@
+<employees>
+    <employee>
+        <id>1</id>
+        <name>Alice Johnson</name>
+        <age>30</age>
+        <department>Engineering</department>
+        <email>alice.johnson@example.com</email>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Bob Smith</name>
+        <age>25</age>
+        <department>Marketing</department>
+        <email>bob.smith@example.com</email>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Charlie Brown</name>
+        <age>35</age>
+        <department>Human Resources</department>
+        <email>charlie.brown@example.com</email>
+    </employee>
+    <employee>
+        <id>4</id>
+        <name>Daisy Miller</name>
+        <age>28</age>
+        <department>Sales</department>
+        <email>daisy.miller@example.com</email>
+    </employee>
+    <employee>
+        <id>5</id>
+        <name>Evan Davis</name>
+        <age>40</age>
+        <department>Finance</department>
+        <email>evan.davis@example.com</email>
+    </employee>
+</employees>
